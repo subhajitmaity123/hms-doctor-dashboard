@@ -1,0 +1,124 @@
+.login-page {
+    background-image: url('/medical-background.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .login-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.326); /* Semi-transparent white overlay */
+  }
+  
+  .login-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .login-form {
+    background: rgba(255, 255, 255, 0.401);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+  }
+  
+  .login-logo {
+    width: 260px;
+    height: 160px;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  
+  .login-title {
+    color: #2c3e50;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .login-subtitle {
+    color: #7f8c8d;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .login-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .form-input {
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+  
+  .login-button {
+    background: linear-gradient(140deg, #9083d5, #271776ca);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+  }
+  .login-button:hover{
+    background: linear-gradient(140deg, #9083d5, #d40f0fca);
+  }
+  .login-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+  }
+  
+  @media (max-width: 480px) {
+    .login-form {
+      padding: 30px 20px;
+    }
+    
+    .login-title {
+      font-size: 22px;
+    }
+    
+    .login-logo {
+      width: 80px;
+      height: 80px;
+    }
+  }
